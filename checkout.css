@@ -1,0 +1,337 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #88d4ff;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 100%;
+}
+
+body{
+    margin:auto;
+}
+
+header div h1{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: auto;
+    margin-top: 5px;
+    margin-left: -130px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header div nav ul {
+    list-style-type: none; /* Remove bullets */
+    overflow: hidden; /* Clear floats */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0%;
+    margin-right: 340px;
+}
+
+nav ul li{
+    float: left;
+    width: 7rem;
+}
+
+nav ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2px 0px; /* Padding for each menu item */
+    margin: auto 5px;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    background-color: lightgray;
+    border: 3px solid black;
+    border-radius: 1rem;
+    
+
+}
+ul li a:hover {
+    background-color: darkgray;
+}
+
+.logo{
+    margin-right: 20%;
+    margin-left: 30%;
+    margin-top: 2px;
+    max-width: 125px;
+    max-height: 120px;
+}
+
+.search-icon{
+    max-width: 58px;
+    margin-bottom: 5px;
+}
+
+header div img{
+    font-size: 70px; /* Increase icon size */
+    margin: -5px; /* Add margin between icons */
+    text-decoration: none;
+    display: inline-flex; 
+    max-width: 75px;
+    margin-right: 45px;
+}
+
+.shopping-cart {
+    max-width: 68px;
+    margin-bottom: 1.5px;
+}    
+
+header div img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.badge {
+    position: absolute; /* Change this line */
+    top: 20px; /* Adjust these values as needed */
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    color: #333;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
+    animation: bounce 0.5s; /* Apply the bounce animation */
+}
+@keyframes bounce {
+    0%, 66.66%, 100% {
+      transform: translateY(0);
+    }
+    33.33% {
+      transform: translateY(-20px);
+    }
+    16.66%,50%,83.33% {
+      transform: translateY(-10px);
+    }
+}
+section{
+    padding: 1%;
+    display: flex;
+}
+
+.contentcontainer{
+    width: 60%; /* Adjust the width as needed */
+    max-width: 60%;
+    border: 2px solid #d3d3d3; /* Set your desired outline color */
+    border-radius: 20px; /* Adjust the border radius as needed */
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.product {
+    width: 80%;
+    height: 150px;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+
+.product img {
+    margin-left: auto;
+    height: 150px;
+    width: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.product div {
+    flex: 1;
+    margin-left: 2%;
+}
+
+.product h3 {
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product p {
+    margin: 1% 0;
+}
+
+.product p:last-child {
+    font-weight: bold;
+}
+.qty-and-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product .qty {
+    height: 28px;
+    width: 75px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    padding: 7px;
+    display: inline-block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product .stock {
+    color: #3ba608;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product .delivery {
+    color: #c4c4c4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product .price {
+    font-size: x-large;
+    font-weight: bold;
+    color: #0399cd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.order-section {
+    max-width: 40%;
+    margin: 35px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.order-section h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    border-radius: 5px 0px 0px 5px;
+    border: 5px solid #eaeaea;
+    border-radius: 40px 40px 0px 0px;
+    padding: 10px 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    border-bottom: 0px;
+}
+
+.order-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border-color: #dddada;
+    border-radius: 30px;
+    border: 3px solid #dddada;
+    margin: -3px;
+}
+
+.order-count, .shipping-count, .pcost-count, .promo-count, .total-count{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    height: 50px;
+    padding: 0 2% ;
+}
+
+.promo-count{
+    margin-bottom: 50px;
+}
+
+.total-count{
+    color: #d70507;
+    margin-bottom: 20px;
+}
+
+.order-button{
+    width: 80%;
+    height: 50px;
+    background-color: #fed602;
+    color: black;
+    border: 3px solid black;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    line-height:25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #88d4ff;
+    text-align: center;
+    padding: auto;
+    border-radius: 10px;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    vertical-align: top;
+    width: auto; /* Adjust the width as needed */
+    padding-right: 20px; /* Add some space between columns */
+    margin: auto;
+    text-align: center;
+    max-width: max-content;
+}
+
+footer div div{
+    flex: 1;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+.footer_head{
+    font-weight: bold;   
+    font-family: sans-serif;
+}
+
+footer div div ul li {
+    list-style-type: none; /* Remove bullets */
+    overflow: visible; /* Clear floats */
+    text-align: left;
+    justify-content: center;
+    margin: 0;
+}
+
+footer div div ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+footer div div ul li a:hover{
+    color: grey;
+    background-color: #88d4ff;
+}
+
+.footer_copyright {
+    color: rgb(102, 99, 99);
+    text-decoration: none;
+    font-family: sans-serif;
+}
