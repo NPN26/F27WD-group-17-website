@@ -15,7 +15,7 @@ function displayData() {
         var priceString = data.price;
         priceString = priceString.substr(1);
         var price = parseFloat(priceString);
-        pricetotal = pricetotal + price;
+        pricetotal = pricetotal + (price*data.qty) ;
 
         productcount += data.qty;
 
@@ -41,3 +41,14 @@ function displayData() {
     let p_totalcost = document.getElementById('total-cost');
     p_totalcost.innerHTML = "$"+parseFloat(pricetotal+shipping_cost).toFixed(2);
 }
+function showPopup() {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("popup").style.display = "none";
+}
+
+document.getElementById("popupBtn").addEventListener("click", showPopup);

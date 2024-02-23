@@ -61,10 +61,22 @@
                         <p>Order Total:</p>
                         <p id="total-cost"></p>
                     </div>
-                    <button class="order-button">Place your order</button>
+                    <button class="order-button" id="popupBtn">Place your order</button>
                 </div>
             </section>
         </section>
+        
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Pacific Northwest X-Ray</h2>
+                <p>Thanks for your order!</p>
+                <p>You'll receive an email when your products are shipped.</p>
+                <p>If you have any questions, call us any time at 1-800-827-9729 or simply reply to the email.</p>
+                <button class="close" onclick="closePopup()">Okay</button>
+            </div>
+        </div>
 
         <footer>
             <div>
