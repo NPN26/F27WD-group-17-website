@@ -1,117 +1,3 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #88d4ff;
-    padding: 0px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0px;
-    border-radius: 10px;
-    z-index: 1000;
-    width: 100%;
-}
-
-body{
-    margin:auto;
-}
-
-header div h1{
-    text-align: center;
-    font-size: 55px;
-    margin-bottom: auto;
-    margin-top: 5px;
-    margin-left: -20px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-header div nav ul {
-    list-style-type: none; /* Remove bullets */
-    overflow: hidden; /* Clear floats */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-left: 0%;
-    margin-right: 235px;
-}
-
-nav ul li{
-    float: left;
-    width: 7rem;
-}
-
-nav ul li a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 2px 0px; /* Padding for each menu item */
-    margin: auto 5px;
-    text-decoration: none;
-
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-
-    background-color: lightgray;
-    border: 3px solid black;
-    border-radius: 1rem;
-
-}
-ul li a:hover {
-    background-color: darkgray;
-}
-
-.logo{
-    margin-left: 50%;
-    margin-top: 2px;
-    max-width: 125px;
-    max-height: 120px;
-}
-
-.search-icon{
-    max-width: 60px;
-    margin-bottom: 5px;
-}
-
-header div img{
-    font-size: 70px; /* Increase icon size */
-    margin: 0 10px; /* Add margin between icons */
-    text-decoration: none;
-    display: inline-flex; 
-    max-width: 75px;
-    margin-right: 15px;
-}
-
-header div img:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.badge {
-    position: absolute; /* Change this line */
-    top: 20px; /* Adjust these values as needed */
-    right: 15px;
-    width: 25px;
-    height: 25px;
-    background-color: yellow;
-    color: #333;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 20px;
-    text-align: center;
-    z-index: 1000;
-    animation: bounce 0.5s; /* Apply the bounce animation */
-}
-@keyframes bounce {
-    0%, 66.66%, 100% {
-      transform: translateY(0);
-    }
-    33.33% {
-      transform: translateY(-20px);
-    }
-    16.66%,50%,83.33% {
-      transform: translateY(-10px);
-    }
-}
-
 section{
     padding-top: 0%;
 }
@@ -163,7 +49,6 @@ section{
     font-family:Arial, Helvetica, sans-serif;
     font-size: xx-large;
     color:#48bdff;
-    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
     border-radius: 5px 0px 0px 5px;
     border: 5px solid #eaeaea;
     border-radius: 40px 40px 0px 0px;
@@ -193,6 +78,7 @@ section{
     font-size: 14px;
     color:black;
     padding: 0 7.5%;
+    font-weight: 500;
 }
 
 .see-more{
@@ -207,6 +93,7 @@ section{
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
 }
 .see-more:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -239,60 +126,4 @@ section{
 .plus-minus {
     font-weight: bold;
     font-size: 30px;
-}
-
-footer {
-    background-color: #88d4ff;
-    text-align: center;
-    padding: auto;
-    border-radius: 10px;
-    z-index: 1000;
-    font-family: sans-serif;
-}
-
-footer div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;    
-    vertical-align: top;
-    width: auto; /* Adjust the width as needed */
-    padding-right: 20px; /* Add some space between columns */
-    margin: auto;
-    text-align: center;
-    max-width: max-content;
-}
-
-footer div div{
-    flex: 1;
-    margin-right: 20px;
-    font-family: sans-serif;
-}
-.footer_head{
-    font-weight: bold;   
-    font-family: sans-serif;
-}
-
-footer div div ul li {
-    list-style-type: none; /* Remove bullets */
-    overflow: visible; /* Clear floats */
-    text-align: left;
-    justify-content: center;
-    margin: 0;
-}
-
-footer div div ul li a{
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-footer div div ul li a:hover{
-    color: grey;
-    background-color: #88d4ff;
-}
-
-.footer_copyright {
-    color: rgb(102, 99, 99);
-    text-decoration: none;
-    font-family: sans-serif;
 }

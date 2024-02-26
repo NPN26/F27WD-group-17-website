@@ -1,0 +1,127 @@
+.product-box {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: flex;
+    display: flex;
+    padding: 1%;
+    margin-top: 15px;
+}
+
+.curved-box {
+    width: 70%; /* Adjust the width as needed */
+    max-width: 70%;
+    border: 2px solid #d3d3d3; /* Set your desired outline color */
+    border-radius: 20px; /* Adjust the border radius as needed */
+    margin-right: 5px;
+}
+
+.curved-box h1{
+    color: #2cb2ff; /* Adjust the text color */
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.curved-box p{
+    color: #000000; /* Adjust the text color */
+    text-align:justify;
+    margin-right: 2.5%;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.curved-box h2{
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.curved-box ul{
+    font-size: large;
+    margin-left: 30px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.curved-box ul li{
+    padding-bottom: 3px;
+}
+
+.curved-box-image {
+    width: 25%;
+    max-width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 2px solid #d3d3d3; /* Set your desired outline color */
+    border-radius: 20px; /* Adjust the border radius as needed */
+}
+
+.box-image{
+    width: 100%; /* Make the image fill the width of the box */
+    height: 100%; /* Make the image fill the height of the box */
+    object-fit: fill; /* Maintain aspect ratio and cover the entire box */
+    border-radius: 20px; /* Adjust the border radius to match the box */
+    overflow: hidden; /* Ensure the content is clipped to the box boundaries */
+}
+
+.price-cart-box{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.add-to-cart{
+    width: 175px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #fed602;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-left: 34%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    line-height:15px;
+    font-family: sans-serif;
+}
+
+.add-to-cart:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: burlywood;
+}
+
+.price{
+    width: 125px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #fed602;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: 7.5%;
+    margin-top: -5px;
+}
+
+.price p{
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2px;
+}
