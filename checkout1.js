@@ -22,7 +22,16 @@ function displayData() {
         var contentContainer = document.getElementById("contentContainer");
         
         // Populate the container with HTML content based on the data
-        var productCode = "<div class='product'><img src='"+data.imgLink+"'><div><h3>"+data.name+"</h3><p class='stock'>In Stock </p><p class='delivery'> Eligible for Free delivery </p><div class='qty-and-price'><p class='qty'>Qty: "+data.qty+"</p><p class='price'>"+data.price+"</p></div></div></div>";
+        var productCode = "<div class='product'><img src='"
+                    +data.imgLink+
+                    "'><div><h3>"
+                    +data.name+
+                    "</h3><p class='stock'>In Stock </p><p class='delivery'> Eligible" +
+                    "for Free delivery </p><div class='qty-and-price'><p class='qty'>Qty: "
+                    +data.qty+
+                    "</p><p class='price'>"
+                    +data.price+
+                    "</p></div></div></div>";
 
         // Append the container to the body of the document
         contentContainer.innerHTML += productCode

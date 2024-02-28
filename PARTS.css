@@ -40,14 +40,45 @@ section{
 
 .Text h2{
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 3vw;
     margin: auto;
     padding-left: 30px;
-    padding-top: 35px;
 }
 
 .Text p{
     padding-left: 30px;
-    font-size: large;
+    font-size: 1.5vw;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1000px) {
+    .section h1{
+        font-size: 7vw;
+    }
+    .Text p{
+        font-size: 2.8vw;
+    }
+    .Text h2{
+        font-size: 3vw;
+    }
+    .Container{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 525px) {
+    .section h1{
+        font-size: 11vw;
+    }
+    .Text h2{
+        font-size: 5vw;
+        padding-left: 3vw;
+    }
+    .Text p{
+        font-size: 4vw;
+        padding-left: 3vw;
+    }
+    .product-img{
+        display: none;
+    }
+}
+

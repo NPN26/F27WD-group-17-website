@@ -47,13 +47,13 @@ section{
 
 .equipment-section h1{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: 5vw;
     color:#48bdff;
     border-radius: 5px 0px 0px 5px;
     border: 5px solid #eaeaea;
     border-radius: 40px 40px 0px 0px;
     padding: 10px 20px;
-    max-width: 25%;
+    max-width: 50vw;
     margin: 0 auto;
     border-bottom: 0px;
 }
@@ -61,21 +61,21 @@ section{
 .equipment-card img {
     border-radius: 50%;
     border: 3px solid black;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     object-fit:cover;
 }
   
 .equipment-card h2 {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.75vw;
     color:#0399cd;
     padding: 0 15%;
 }
   
 .equipment-card p {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1.25vw;
     color:black;
     padding: 0 7.5%;
     font-weight: 500;
@@ -126,4 +126,61 @@ section{
 .plus-minus {
     font-weight: bold;
     font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    .equipment-section{
+        width:90%;
+        max-width: 90%;
+    }
+    .equipment-section h1 {
+        font-size: 24px;
+        max-width: 75%;
+    }
+
+    .equipment-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .equipment-grid {
+        grid-gap: 10px;
+        padding: 5px;
+    }
+
+    .equipment-card {
+        padding: 5px;
+    }
+
+    .equipment-card img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .equipment-card h2 {
+        font-size: 16px;
+    }
+
+    .equipment-card p {
+        font-size: 14px;
+    }
+
+    .see-more {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .plus-minus {
+        font-size: 20px;
+    }
+    #remove{
+        display: none;
+    }
 }

@@ -209,3 +209,42 @@ section{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+@media only screen and (max-width: 1000px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contentcontainer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .order-section {
+        max-width: 100%;
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+    .product {
+        width: 100%;
+    }
+    .order-section h1 {
+        max-width: 100%;
+    }
+    .popup{
+        display: none;
+        position: fixed;
+        width:80%;
+        padding: 2%;
+        background-color: #ffffff;
+        border: 1px solid #e2dfdf;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .close{
+        width: 35%;
+    }
+    .product h3{
+        font-size: x-large;
+    }
+}
